@@ -18,12 +18,8 @@ struct spec_direct
 };
 typedef struct spec_direct spec;
 
-/*Main functions*/
-<<<<<<< HEAD
+
 int analyse(const char *format, spec func[], va_list arg_list);
-=======
-int parser(const char *format, spec func[], va_list arg_list);
->>>>>>> 3b76f59... Header file containing all prototypes
 int _printf(const char *format, ...);
 int _putchar(char);
 int print_char(va_list);
@@ -39,7 +35,6 @@ int print_octal(va_list args);
 int print_hex_lower(va_list args);
 int print_hex_upper(va_list args);
 
-/*Helper functions*/
 unsigned int length_of_base(unsigned int, int);
 char *rev_fnum(char *);
 void putchar_base(char *fnum);
