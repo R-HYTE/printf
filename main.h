@@ -18,11 +18,7 @@ struct spec_direct
 };
 typedef struct spec_direct spec;
 
-<<<<<<< HEAD
 
-=======
-/*Main functions*/
->>>>>>> 43e5d19 (Modifications of existing files)
 int analyse(const char *format, spec func[], va_list arg_list);
 int _printf(const char *format, ...);
 int _putchar(char);
