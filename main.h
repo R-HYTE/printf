@@ -19,7 +19,7 @@ struct spec_direct
 typedef struct spec_direct spec;
 
 /*Main functions*/
-int parser(const char *format, spec func[], va_list arg_list);
+int analyse(const char *format, spec func[], va_list arg_list);
 int _printf(const char *format, ...);
 int _putchar(char);
 int print_char(va_list);

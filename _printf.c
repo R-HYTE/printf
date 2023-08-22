@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _printf - Receives the main string and all the necessary parameters to
- * print a formated string
+ * _printf - Called in the main function and accepts the arguments passed into it
+ * @...: Parameters
  * @format: A string containing all the desired characters
- * Return: A total count of the characters printed
+ * Return: number of characters printed
  */
 int _printf(const char *format, ...)
 {
-	int printed_chars;
+	int char_count;
 	spec func[] = {
 		{"c", print_char},
 		{"s", print_fnum},
@@ -30,8 +30,7 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(args, format);
-	/*Calling parser function*/
-	printed_chars = parser(format, func, args);
+	char_count = analyse(format, func, args);
 	va_end(args);
-	return (printed_chars);
+	return (char_count);
 }

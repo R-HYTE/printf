@@ -1,6 +1,6 @@
 #include "main.h"
 
-/* A number could be positve or negative value so we split the functions into two*/
+/* Number is either positve or negative */
 
 /**
  * print_number - prints a number send to this function

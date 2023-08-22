@@ -24,8 +24,9 @@ int print_reversed(va_list args)
 }
 
 /**
- * rot13 - Replaces a letter with the letter found 13 steps after it in the alphabet sequence
- * @args: string passed into 
+ * rot13 - Replaces a letter with the letter
+ * found 13 steps after it in the alphabet sequence
+ * @args: string passed into
  * Return: number of characters converted  in tthe string,
  * an error i.e (-1) if pointer str is NULL
  */
