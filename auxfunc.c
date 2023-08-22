@@ -32,7 +32,6 @@ char *rev_fnum(char *fnum)
 /**
  * putchar_base - calls a putchar function,
  * sends characters to be written on standard output
- * putchar_base - calls a putchar function and sends characters to be written on standard output
  * @fnum: String holding the final number to parse
  */
 void putchar_base(char *fnum)
