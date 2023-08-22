@@ -30,7 +30,8 @@ char *rev_fnum(char *fnum)
 }
 
 /**
- * putchar_base - calls a putchar function and sends characters to be written on standard output
+ * putchar_base - calls a putchar function,
+ * sends characters to be written on standard output
  * @fnum: String holding the final number to parse
  */
 void putchar_base(char *fnum)
@@ -42,7 +43,8 @@ void putchar_base(char *fnum)
 }
 
 /**
- * length_of_base - Calculates and returns the length of a converted value to preferred base
+ * length_of_base - Calculates and returns the length
+ * of a converted value to preferred base
  * @num: The number for which the length is being calculated
  * @base: Base value dealing with
  * Return: An integer representing the length of a number

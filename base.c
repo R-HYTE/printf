@@ -1,11 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
-int hex_det(int, char); /*Prototype for determining which format to use for hexadecimal values*/
+/*Prototype for determining which format to use for hexadecimal values*/
+int hex_det(int, char);
 
 /**
- * print_binary - In conjuction with length_of_base function it facilitates 
- * conversion of  a decimal value to a binary digit then reverses this value to be able to print it
+ * print_binary - In conjuction with length_of_base function it facilitates
+ * conversion of  a decimal value to a binary digit,
+ * then reverses this value to be able to print it
  * @args: List of arguments passed
  * Return: length of the number printed
  */
@@ -24,7 +26,8 @@ int print_binary(va_list args)
 	char_count = length_of_base(num, 2);
 	fnum = malloc((sizeof(char) * char_count) + 1);
 	if (fnum == NULL)
-		return (-1); /*if my fnum string is not allocated with bytes then an error will be printed*/
+/*if my fnum string is not allocated with bytes then an error will be printed*/
+		return (-1);
 
 	for (i = 0; num > 0; i++)
 	{
@@ -86,7 +89,8 @@ int print_octal(va_list args)
 }
 
 /**
- * print_hex_lower - Prints a representation of a decimal number on base16 lowercase
+ * print_hex_lower - Prints a representation of a decimal number
+ * on base16 lowercase
  * @args: List of the arguments passed to the function
  * Return: Number of characters printed
  */
@@ -134,7 +138,8 @@ int print_hex_lower(va_list args)
 
 
 /**
- * print_hex_upper - Prints a representation of a decimal number on base16 Uppercase
+ * print_hex_upper - Prints a representation of a decimal number
+ * on base16 Uppercase
  * @args: List of the arguments passed to the function
  * Return: Number of characters printed
  */
